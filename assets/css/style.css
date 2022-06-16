@@ -217,6 +217,8 @@ a {
         flex-wrap: wrap;
         height: 100px;
         width: 100%;
+        position: relative;
+        left: 38px;
     }
     header div{
         height: 40px;
@@ -233,7 +235,7 @@ a {
        display: flex;
     }
     nav ul li a {
-        font-size: 15px !important;
+        font-size: 10px !important;
     }
 
     .subtitle h2 {
@@ -241,4 +243,111 @@ a {
         width: 200px;
         height: 50px;
     }
+    .hero {
+        position: relative;
+        left: 38px;
+        width: 100%;
+    }
+    #about-me {
+        width: 100%;
+      
+        display: block;
+    }
+    .text-info {
+        border-left: none;
+        border-top: 5px solid var(--dark-gray);
+        width: auto;
+        margin: 20px;
+    }
+    .text-info p {
+        position: relative;
+        right: 35px;
+      }
+      .text-title {
+     
+        height: 50px;
+        width: auto;
+       
+      }
+      .text-title h2 {
+        width: 100%;
+        text-align: center;
+      }
+      #work {
+        
+        width: auto;
+        position: relative;
+        left: 38px;
+        display: block;
+        padding: 0
+    }
+    .images {
+   border-left: none;
+   border-top: 5px solid var(--dark-gray);
+    width: 95%;
+    height: 685px;
+    display: block;
+    padding: 0;
+    margin: 20px;
+     }
+     #large-image-text {
+     
+    }
+    #large-image-text, .small-image-text, .small-image-text-right {
+      
+        height: 25px;
+        padding: 0;
+        width: 35%;
+    }
+     #large-image {
+      
+        height: 100px;
+        width: 91%;
+        right: 15px;
+    }
+    #large-image img {
+     
+    }
+    #large-image img:hover {
+     
+    }
+    #large-image-text h3, #large-image-text p {
+     
+        font-size: 10px;
+        
+    }
+    #small-images {
+      
+        display: block;
+        height: 245px;
+    }
+    #small-images img {
+        height: 100px;
+        width: 100%;
+        position: relative;
+        right: 6px;
+        
+    }
+    #small-images img:hover {
+      
+    }
+    .small-image-text {
+   
+        bottom: 150px;
+        left: 0;
+    }
+    .small-image-text h3, .small-image-text p, .small-image-text-right h3, .small-image-text-right p {
+        font-size: 10px;
+    }
+    .small-image-text-right {
+    
+        position: relative;
+        left: 0;
+        bottom: 60px;
+    }
+    .small-image-text h3, .small-image-text-right h3,
+    .small-image-text p, .small-image-text-right p {
+      
+    }
+
 }
