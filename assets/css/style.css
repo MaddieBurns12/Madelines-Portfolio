@@ -1,6 +1,6 @@
 * {
     font-family: Helvetica, sans-serif;
-
+   
 }
 
 /* header */
@@ -98,14 +98,10 @@ header a {
    padding-left: 75px;
    width: 66%;
    border-left: 5px solid lightblue;
-   
-
 }
-.text-info p {
+.text-info p{
   width: 95%;
   line-height: 1.5;
-
-  
 }
 
 /* work */
@@ -218,4 +214,60 @@ a img {
     padding: 0;
     margin: 0;
     display: block;
+}
+/* contact me */
+.contact-info {
+  
+   display: flex;
+   padding-left: 70px;
+   width: 66%;
+   border-left: 5px solid lightblue;
+}
+.contact-info ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    width: 95%;
+    line-height: 1.5;
+}
+.contact-info ul li {
+    border-bottom: 5px solid lightblue;
+    width: auto;
+    line-height: 1.5;
+    text-align: center;
+    list-style: none;
+    font-weight: bold;
+}
+.contact-title {
+
+    display: flex;
+    width: 200px;
+    position: relative;
+}
+.contact-title h2 {
+    width: 180px;
+    padding: 20px;
+    font-size: 40px;
+    text-align: right;
+  
+    position: absolute;
+    top: -45px;
+    right: 0;
+}
+#contact-me {
+    display: flex;
+    justify-content: center;
+    width: 98%;
+    padding: 40px;
+
+}
+#contact-me {
+    position: relative;
+    bottom: 220px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
