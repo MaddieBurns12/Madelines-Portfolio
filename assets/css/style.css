@@ -237,7 +237,6 @@ a {
     nav ul li a {
         font-size: 10px !important;
     }
-
     .subtitle h2 {
         font-size: 20px;
         width: 200px;
@@ -264,16 +263,14 @@ a {
         right: 35px;
       }
       .text-title {
-     
         height: 50px;
         width: auto;
-       
-      }
-      .text-title h2 {
+    }
+    .text-title h2 {
         width: 100%;
         text-align: center;
-      }
-      #work {
+     }
+    #work {
         
         width: auto;
         position: relative;
@@ -282,17 +279,14 @@ a {
         padding: 0
     }
     .images {
-   border-left: none;
-   border-top: 5px solid var(--dark-gray);
-    width: 95%;
-    height: 685px;
-    display: block;
-    padding: 0;
-    margin: 20px;
+        border-left: none;
+        border-top: 5px solid var(--dark-gray);
+        width: 95%;
+        height: 685px;
+        display: block;
+        padding: 0;
+        margin: 20px;
      }
-     #large-image-text {
-     
-    }
     #large-image-text, .small-image-text, .small-image-text-right {
       
         height: 25px;
@@ -305,16 +299,8 @@ a {
         width: 91%;
         right: 15px;
     }
-    #large-image img {
-     
-    }
-    #large-image img:hover {
-     
-    }
     #large-image-text h3, #large-image-text p {
-     
         font-size: 10px;
-        
     }
     #small-images {
       
@@ -328,11 +314,7 @@ a {
         right: 6px;
         
     }
-    #small-images img:hover {
-      
-    }
     .small-image-text {
-   
         bottom: 150px;
         left: 0;
     }
@@ -340,14 +322,37 @@ a {
         font-size: 10px;
     }
     .small-image-text-right {
-    
         position: relative;
         left: 0;
         bottom: 60px;
     }
-    .small-image-text h3, .small-image-text-right h3,
-    .small-image-text p, .small-image-text-right p {
+    .contact-info {
+        border-left: none;
+        border-top: 5px solid var(--dark-gray);
+        padding: 0;
+        display: block;
+        margin: 10px auto;
+        width: 100%;
+     }
+     .contact-info ul {
+       
+        display: block;
+        
+     }
+     .contact-info ul li {
+       width: 200px;
+       position: relative;
+       right: -20px;
+       
+       
+     }
+     #contact-me {
       
-    }
-
+      display: block;
+      padding: 0;
+      width: 100%;
+      height: 250px;
+      position: relative;
+      left: 35px;
+     }
 }
