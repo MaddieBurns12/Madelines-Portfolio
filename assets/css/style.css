@@ -1,3 +1,7 @@
+:root {
+    --dark-gray: #293240;
+    --teal: #6fcade;
+}
 * {
     font-family: Helvetica, sans-serif;
    
@@ -8,15 +12,15 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: gray;
+    background-color: var(--dark-gray);
     width: 98%;
     margin: 30px auto 0 auto;
     height: 100px;
 }
 header div {
-    color: gray;
+    color: var(--dark-gray);
     padding: 5px 15px 5px 55px;
-    background-color: lightblue;
+    background-color: var(--teal);
     font-size: 50px;
     font-weight: bold;
 }
@@ -31,14 +35,14 @@ header nav ul {
 }
 header nav ul li a {
     padding: 5px;
-    border-bottom: solid 3px lightblue;
+    border-bottom: solid 3px var(--teal);
     margin: 5px;
     font-weight: bold;
     font-size: 20px;
 }
 header a {
     text-decoration: none;
-    color: lightblue;
+    color: var(--teal);
 }
 
 /* hero */
@@ -51,13 +55,11 @@ header a {
     position: relative;
     width: 98%;
     margin: 0 auto;
-    
 }
 .subtitle {
     position: absolute;
     bottom: 5px;
     right: 100px;
-    
 }
 .subtitle h2 {
     text-align: center;
@@ -65,104 +67,61 @@ header a {
     padding: 5px;
     width: 550px;
     height: 35px;
-    background-color: lightblue;
-    color: gray;
+    background-color: var(--teal);
+    color: var(--dark-gray);
 }
 
 /* about me */
-#about-me {
-    display: flex;
-    justify-content: center;
-    width: 98%;
-    padding: 40px;
-
-}
-.text-title {
-
-    display: flex;
-    width: 200px;
-    position: relative;
-}
-.text-title h2 {
-    width: 120px;
-    padding: 20px;
-    font-size: 40px;
-    text-align: right;
-  
-    position: absolute;
-    top: -30px;
-    left: 40px;
-}
-.text-info {
-   display: flex;
-   padding-left: 75px;
-   width: 66%;
-   border-left: 5px solid lightblue;
-}
-.text-info p{
-  width: 95%;
+.text-info p {
+  width: 100%;
   line-height: 1.5;
 }
 
 /* work */
 #work {
-    display: flex;
-    justify-content: center;
-    width: 98%;
-    padding: 40px;
     margin-top: 200px;
     position: relative;
     top: -200px;
 }
 .images {
-    display: flex;
     flex-wrap: wrap;
     margin-top: 0;
-    width: 70%;
-    border-left: 5px solid lightblue;
     justify-content: center;
     height: 800px;
-    
  }
+ #large-image-text {
+    left: 0px;
+}
+#large-image-text, .small-image-text, .small-image-text-right {
+    position: absolute;
+    z-index: 100;
+    background-color: var(--teal);
+    width: 175px;
+    height: 50px;
+    padding: 5px 15px;
+    bottom: 20px;
+}
  #large-image {
     width: 90%;
     height: 450px;
-    border: 5px solid lightblue;
-    margin: 5px;
+    right: 5px;
+    margin: 15px;
     position: relative;
-   
-    
 }
 #large-image img {
     width: 100%;
     height: 100%;
     opacity: .5;
     transition: opacity 1s;
+    border: 5px solid var(--teal);
 }
 #large-image img:hover {
     opacity: 1;
-    
 }
-#large-image-text {
-    position: absolute;
-    z-index: 100;
-    bottom: 20px;
-    left: 0px;
-    background-color: lightblue;
-    padding: 5px 15px;
-    height: 50px;
-    width: 175px;
-}
-#large-image-text h3 {
+#large-image-text h3, #large-image-text p {
     z-index: 100;
     padding: 1px;
     margin: 0;
-   
-}
-#large-image-text p {
-    padding: 1px;
-    margin: 0;
-  
 }
 #small-images {
     display: flex;
@@ -170,14 +129,13 @@ header a {
     justify-content: center;
     width: 92%;
     position: relative;
-    
 }
 #small-images img {
     width: 50%;
     padding: 0;
     height: 150px;
     position: relative;
-    border: 5px solid lightblue;
+    border: 5px solid var(--teal);
     margin: 5px;
     opacity: .5;
     transition: opacity 1s;
@@ -186,25 +144,10 @@ header a {
     opacity: 1;
 }
 .small-image-text {
-    position: absolute;
-    z-index: 100;
-    bottom: 20px;
     left: 5px;
-    background-color: lightblue;
-    padding: 5px 15px;
-    height: 50px;
-    width: 175px;
 }
 .small-image-text-right {
-    float: right;
-    position: absolute;
-    z-index: 100;
-    bottom: 20px;
-    right: 365px;
-    background-color: lightblue;
-    width: 175px;
-    height: 50px;
-    padding: 5px 15px;
+    right: 332px;
 }
 .small-image-text h3, .small-image-text-right h3,
 .small-image-text p, .small-image-text-right p {
@@ -215,59 +158,57 @@ a img {
     margin: 0;
     display: block;
 }
+
 /* contact me */
 .contact-info {
-  
-   display: flex;
-   padding-left: 70px;
-   width: 66%;
-   border-left: 5px solid lightblue;
+   height: 125px;
 }
 .contact-info ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 80px;
-    width: 95%;
-    line-height: 1.5;
+    width: 100%;
 }
 .contact-info ul li {
-    border-bottom: 5px solid lightblue;
+    border-bottom: 5px solid var(--teal);
     width: auto;
-    line-height: 1.5;
     text-align: center;
     list-style: none;
     font-weight: bold;
 }
-.contact-title {
-
-    display: flex;
-    width: 200px;
-    position: relative;
-}
-.contact-title h2 {
-    width: 180px;
-    padding: 20px;
-    font-size: 40px;
-    text-align: right;
-  
-    position: absolute;
-    top: -45px;
-    right: 0;
-}
-#contact-me {
-    display: flex;
-    justify-content: center;
-    width: 98%;
-    padding: 40px;
-
-}
 #contact-me {
     position: relative;
-    bottom: 220px;
+    bottom: 200px;
 }
-
 a {
     text-decoration: none;
     color: black;
 }
+
+/* combined rules */
+.text-section {
+    display: flex;
+    width: 98%;
+    padding: 40px;
+}
+.text-title {
+    display: flex;
+    width: 200px;
+    position: relative;
+}
+.text-title h2 {
+    width: 180px;
+    padding: 20px;
+    font-size: 40px;
+    text-align: right;
+    position: absolute;
+    right: 0px;
+    top: -45px;
+}
+.text-info, .contact-info, .images {
+    display: flex;
+    border-left: 5px solid var(--dark-gray);
+    width: 66%;
+    padding-left: 70px;
+}
+
