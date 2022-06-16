@@ -95,10 +95,10 @@ header a {
 }
 .text-info {
    display: flex;
-   justify-content: flex-end;
-   width: 70%;
+   padding-left: 75px;
+   width: 66%;
    border-left: 5px solid lightblue;
-
+   
 
 }
 .text-info p {
@@ -140,8 +140,11 @@ header a {
 #large-image img {
     width: 100%;
     height: 100%;
-   
-    
+    opacity: .5;
+    transition: opacity 1s;
+}
+#large-image img:hover {
+    opacity: 1;
     
 }
 #large-image-text {
@@ -180,6 +183,11 @@ header a {
     position: relative;
     border: 5px solid lightblue;
     margin: 5px;
+    opacity: .5;
+    transition: opacity 1s;
+}
+#small-images img:hover {
+    opacity: 1;
 }
 .small-image-text {
     position: absolute;
@@ -205,4 +213,9 @@ header a {
 .small-image-text h3, .small-image-text-right h3,
 .small-image-text p, .small-image-text-right p {
     margin: 0;
+}
+a img {
+    padding: 0;
+    margin: 0;
+    display: block;
 }
