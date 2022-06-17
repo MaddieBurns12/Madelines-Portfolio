@@ -124,13 +124,13 @@ header a {
 }
 #small-images {
     display: flex;
-    flex-direction: wrap;
+    
     justify-content: center;
     width: 92%;
     position: relative;
 }
-#small-images img {
-    width: 50%;
+#small-images a img {
+    width: 95%;
     padding: 0;
     height: 150px;
     position: relative;
@@ -139,24 +139,23 @@ header a {
     opacity: .5;
     transition: opacity 1s;
 }
-#small-images img:hover {
+#small-images a img:hover {
     opacity: 1;
 }
 .small-image-text {
     left: 5px;
 }
 .small-image-text-right {
-    right: 332px;
+    right: 328px;
 }
 .small-image-text h3, .small-image-text-right h3,
 .small-image-text p, .small-image-text-right p {
     margin: 0;
 }
-a img {
-    padding: 0;
-    margin: 0;
-    display: block;
+#small-images a {
+    width: 100%;
 }
+
 
 /* contact me */
 .contact-info {
@@ -302,6 +301,9 @@ a {
     #large-image-text h3, #large-image-text p {
         font-size: 10px;
     }
+    #large-image-text {
+        top: 65px;
+    }
     #small-images {
       
         display: block;
@@ -324,7 +326,7 @@ a {
     .small-image-text-right {
         position: relative;
         left: 0;
-        bottom: 60px;
+        bottom: 50px;
     }
     .contact-info {
         border-left: none;
@@ -345,6 +347,10 @@ a {
        right: -20px;
        
        
+     }
+     #small-images a img {
+        width: 99%;
+        height: 100px;
      }
      #contact-me {
       
