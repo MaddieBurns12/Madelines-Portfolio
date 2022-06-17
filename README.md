@@ -16,5 +16,13 @@ Given a mock up of the desktop version and mobile version of an example portfoli
 Deployable link : https://maddieburns12.github.io/Madelines-Portfolio/
 
 
-Screenshot of broswer website: ![screenshot-readme](./assets/images/Screenshot%202022-06-16%20224220.png)
-Screenshot of mobile website: ![sceenshot-readme](./assets/images/Screenshot%202022-06-16%20224249.png)
+Screenshot of broswer website: 
+
+![screenshot-readme](./assets/images/Screenshot%202022-06-16%20224220.png)
+
+
+
+
+Screenshot of mobile website: 
+
+![sceenshot-readme](./assets/images/Screenshot%202022-06-16%20224249.png)
