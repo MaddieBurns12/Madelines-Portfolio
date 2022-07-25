@@ -25,4 +25,4 @@ Screenshot of broswer website:
 
 Screenshot of mobile website: 
 
-![sceenshot-readme](./assets/images/Screenshot%202022-06-16%20224249.png)
+![screenshot-readme](./assets/images/Screenshot%202022-06-16%20224249.png)
